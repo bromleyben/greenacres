@@ -20,6 +20,11 @@ header {
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-text:hover, .navbar-default .navbar-text:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: #26b54e; }
 
+.dropdown-menu li a {
+  color: #1d8b3c; }
+.dropdown-menu li:hover {
+  color: #133E30; }
+
 .home-banner {
   color: #fff;
   background: transparent;
@@ -124,8 +129,7 @@ header {
   .ga-service-img:hover {
     cursor: pointer; }
   .ga-service-img.green-thumb {
-    background-color: #1d8b3c;
-    border-color: #133E30; }
+    background-color: #1d8b3c; }
 
 .ga-image-row {
   margin-top: 10px; }
