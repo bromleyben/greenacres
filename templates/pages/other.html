@@ -1,0 +1,69 @@
+
+<div class="ga-page-header">
+    <h1>Other Services</h1>
+</div>
+<div ng-controller="other">
+    <div class="gablock white-block" id="ga-other-logging">
+        <h1>Rural Tree Felling</h1>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-5 left-paragraph">
+                <p>
+                    We provide a variety of rural tree felling services including:
+                </p>
+                <ul>
+                    <li>Tree Felling</li>
+                    <li>Stump Grinding</li>
+                    <li>Chipping and Mulching</li>
+                </ul>
+                <p>
+                    We've cleared properties in preparation for construction projects or a space for fresh lawn.
+                </p>
+            </div>
+            <div class="service-image col-md-2">
+                <img src="images/other-services/thumbnails/tree-chopping.jpg" />
+            </div>
+        </div>
+        <div class="row ga-image-row">
+            <span ng-repeat="image in loggingImages">
+                <img class="img-responsive img-thumbnail ga-service-img green-thumb" ng-click="displayModal(image.id, loggingImages)" ng-src="{{image.thumb}}" />
+            </span>
+        </div>
+    </div>
+    <div class="gablock green-block" id="ga-other-hutches">
+        <h1>Chicken Hutches</h1>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2 service-image">
+                <img src="images/other-services/thumbnails/chicken-pen.jpg" />
+            </div>
+            <div class="col-md-6 col-md-offset-1 right-paragraph">
+                <p>
+                    We've constructed some great chicken hutches with spacious pens, solid housing and easy access doors for quickly gathering eggs, filling water or topping up food.
+
+                </p>
+            </div>
+        </div>
+        <div class="row ga-image-row">
+            <span ng-repeat="image in hutchImages">
+                <img class="img-responsive img-thumbnail ga-service-img" ng-click="displayModal(image.id, hutchImages)" ng-src="{{image.thumb}}" />
+            </span>
+        </div>
+    </div>
+    <div class="gablock white-block" id="ga-other-decks">
+        <h1>Decking</h1>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-5 left-paragraph">
+                <p>
+                    We build decks that are perfect for rural and suburban homes.
+                </p>
+            </div>
+            <div class="col-md-2 service-image">
+                <img src="images/other-services/thumbnails/deck-full.jpg" />
+            </div>
+        </div>
+        <div class="row ga-image-row">
+            <span ng-repeat="image in deckImages">
+                <img class="img-responsive img-thumbnail ga-service-img green-thumb" ng-click="displayModal(image.id, deckImages)" ng-src="{{image.thumb}}" />
+            </span>
+        </div>
+    </div>
+</div>

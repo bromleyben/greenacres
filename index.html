@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="gaApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Green Acres Acreage Mowing Services</title>
+  <meta name="description" content="We specialise in acreage lawn care and maintenance such as mowing, weed spraying, tree chopping and construction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+    <link rel="stylesheet" href="styles/animate.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" id="ga-navbar">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ga-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#ga-banner">Green Acres Mowing Services</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="ga-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#ga-services" id="services-nav-link">Services</a></li>
+                            <li><a href="#ga-testimonials" id="testimonials-nav-link">Testimonials</a></li>
+                            <li><a href="#ga-gallery" id="gallery-nav-link">Gallery</a></li>
+                            <li><a href="#ga-about" id="about-nav-link">About</a></li>
+                            <li><a href="#ga-contact" id="contact-nav-link">Contact Us</a></li>
+                            <li class="divider"></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><p class="navbar-text">Email: acreagemowing@gmail.com</p></li>
+                            <li><p class="navbar-text">Phone: 0412 362 788</p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div ng-view autoscroll="true"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Image</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-image img-responsive" src="" />
+                        <p class="modal-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ga-footer">
+            <div class="container">
+                Green Acres Acreage Mowing Services - 2015
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+    <!--Services-->
+    <script src="services/modal-service.js"></script>
+    <!--Controllers-->
+    <script src="controllers/services.js"></script>
+    <script src="controllers/testimonials.js"></script>
+    <script src="controllers/gallery.js"></script>
+    <script src="controllers/other.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* app css stylesheet */
+body {
+  background: #1d8b3c url("../images/mowing/grass-field.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+header {
+  background: white; }
+
+/*Navbar */
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-default {
+  background-color: white; }
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text, .navbar-default .navbar-brand {
+    color: #1d8b3c; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-text:hover, .navbar-default .navbar-text:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #26b54e; }
+
+.home-banner {
+  color: #fff;
+  background: transparent;
+  min-height: 400px;
+  text-align: center;
+  padding: 150px 0 20px 0; }
+  .home-banner h1 {
+    font-size: 400%; }
+
+.ga-page-header {
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  padding: 50px 0 20px 0; }
+  .ga-page-header h1 {
+    font-size: 400%; }
+
+.ga-logo {
+  height: 200px;
+  border-radius: 10px;
+  opacity: 0; }
+
+/****** Blocks ***** */
+.gablock {
+  margin: 0 0;
+  min-height: 300px;
+  padding: 10px 0 30px 0; }
+  @media screen and (min-width: 800px) {
+    .gablock {
+      margin: 0 40px; } }
+  @media screen and (min-width: 1500px) {
+    .gablock {
+      margin: 0 60px; } }
+  .gablock h1 {
+    font-size: 300%; }
+
+.white-block {
+  color: #1d8b3c;
+  text-align: center;
+  background: #fff; }
+  .white-block p, .white-block ul {
+    color: #133E30;
+    font-size: 120%; }
+
+.green-block {
+  color: white;
+  text-align: center;
+  background: #1d8b3c; }
+  .green-block p {
+    font-size: 120%; }
+
+.left-paragraph {
+  text-align: left;
+  padding-left: 40px; }
+
+.right-paragraph {
+  text-align: left; }
+
+.contact-section h3 {
+  color: #133E30; }
+
+/******Services***** */
+.service-details {
+  margin: 10px 0 0 0; }
+
+.service {
+  text-align: justify;
+  height: 200px; }
+  .service p {
+    font-size: 120%;
+    color: #133E30; }
+  .service h2 {
+    margin-bottom: 18px; }
+
+.service-image img {
+  height: 200px;
+  border-radius: 10px; }
+
+.service-button {
+  width: 130px;
+  margin: 5px 5px;
+  background-color: #1d8b3c;
+  border-color: #1d8b3c;
+  color: #fff; }
+  .service-button:hover, .service-button:active, .service-button:focus {
+    background-color: #26b54e !important;
+    border-color: #1d8b3c !important;
+    color: #fff; }
+
+.testimonial {
+  margin: 0 10px 0 0; }
+
+.ga-footer {
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0 0 0;
+  background: #313131; }
+
+.ga-service-img {
+  max-height: 100px; }
+  .ga-service-img:hover {
+    cursor: pointer; }
+  .ga-service-img.green-thumb {
+    background-color: #1d8b3c;
+    border-color: #133E30; }
+
+.ga-image-row {
+  margin-top: 10px; }
+
+.ga-index-gallery-img {
+  max-height: 200px; }
+  .ga-index-gallery-img:hover {
+    cursor: pointer; }
+
+body.modal-open-noscroll {
+  margin-right: 0 !important;
+  overflow: hidden; }
+
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+  margin-right: 0 !important; }
+
+.modal {
+  overflow-y: auto; }
+
+.modal-body {
+  text-align: center; }
+
+.modal-image {
+  border-radius: 10px; }
+
+.modal-description {
+  color: #133E30;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,82 @@
+<div ng-controller="index as index">
+    <div class="home-banner" id="ga-banner">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="images/logo.jpg" class="ga-logo img-responsive" id="ga-logo"/>
+            </div>
+            <div class="col-md-6">
+                <h1 id="ga-welcome" style="opacity: 0">Welcome to Green Acres</h1>
+                <h2 id="ga-welcome-sub" style="opacity: 0">For all your acreage mowing needs</h2>
+            </div>
+        </div>
+    </div>
+    <div class="gablock white-block" id="ga-services" ng-controller="services as services">
+        <div class="container">
+            <h1>Services</h1>
+            <div class="row service-buttons">
+                <button class="btn btn-default service-button" ng-click="services.selectService(0)">Mowing</button>
+                <button class="btn btn-default service-button" ng-click="services.selectService(1)">Weed Spraying</button>
+                <button class="btn btn-default service-button" ng-click="services.selectService(2)">Fencing</button>
+                <button class="btn btn-default service-button" ng-click="services.selectService(3)">Property Sales</button>
+                <button class="btn btn-default service-button" ng-click="services.selectService(4)">Other</button>
+            </div>
+            <div class="row service-details">
+                <div class="service col-md-offset-1 col-md-6">
+                    <h2 class="service-header">Explore our many services</h2>
+                    <p class="service-body">
+                        Our skills extend far beyond just acreage mowing. We provide whatever you need to get your acreage looking just they way you like.
+                    </p>
+                    <div class="service-info-button"></div>
+                </div>
+                <div class="service-image col-md-offset-1 col-md-2">
+                    <img src="images/tools.ico" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gablock green-block" id="ga-testimonials" ng-controller="testimonials as testimonials">
+        <div class="container">
+            <h1>Testimonials</h1>
+            <div class="testimonials-section">
+                <div class="testimonial">
+                    <blockquote>
+                        "When you have a busy lifestyle & live in a rural residential environment as I do it's impossible to keep on top of all the ground maintenance that needs to be attended to. This is the reason why I have enlisted the services of Karl & Jason from Green Acres to assist. There is nothing that these guys can't do. The best part is you only have to tell them once. I have found them also to be honest & reliable & would recommend to anyone who needs their help."
+                    </blockquote>
+                    <strong> - Nelson Green, Mulgoa NSW</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gablock white-block" id="ga-gallery" ng-controller="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="row">
+                    <span ng-repeat="image in galleryImages">
+                        <img class="img-responsive img-thumbnail ga-index-gallery-img" ng-click="displayModal(image.id, galleryImages)" ng-src="{{image.thumb}}" />
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="gablock green-block" id="ga-about">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>
+                We are a family run business operating in the western sydney area.
+            </p>
+        </div>
+    </div>
+    <div class="gablock white-block contact-section" id="ga-contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="col-md-6">
+                <h2>Phone</h2>
+                <h3>Jason: 0412 362 788</h3>
+                <h3>Karl: 0418 735 850</h3>
+            </div>
+            <div class="col-md-6">
+                <h2>Email: </h2>
+                <h3>acreagemowing@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+</div>

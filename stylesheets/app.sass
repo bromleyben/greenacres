@@ -1,0 +1,167 @@
+/* app css stylesheet */
+
+$ga-green: #1d8b3c
+$ga-darkgreen: #133E30
+$highlight: lighten($ga-green, 10)
+$break-small: 320px
+$break-large: 800px
+$break-very-large: 1500px
+
+body
+  background: $ga-green url("../images/mowing/grass-field.jpg") no-repeat fixed center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+header
+  background: white
+
+/*Navbar*/
+.navbar
+  margin-bottom: 0
+
+.navbar-default
+  background-color: white
+  .navbar-nav>li>a, .navbar-text, .navbar-brand
+    color: $ga-green
+    &:hover, &:focus
+      color: $highlight
+
+.home-banner
+  color: #fff
+  background: transparent
+  min-height: 400px
+  text-align: center
+  padding: 150px 0 20px 0
+  h1
+    font-size: 400%
+
+.ga-page-header
+  color: #fff
+  background: transparent
+  text-align: center
+  padding: 50px 0 20px 0
+  h1
+    font-size: 400%
+
+.ga-logo
+  height: 200px
+  border-radius: 10px
+  opacity: 0
+
+/****** Blocks ******/
+.gablock
+  margin: 0 0
+  @media screen and (min-width: $break-large)
+    margin: 0 40px
+  @media screen and (min-width: $break-very-large)
+    margin: 0 60px
+
+  min-height: 300px
+  padding: 10px 0 30px 0
+  h1
+    font-size: 300%
+
+.white-block
+  color: $ga-green
+  text-align: center
+  background: #fff
+  p, ul
+    color: $ga-darkgreen
+    font-size: 120%
+
+.green-block
+  color: white
+  text-align: center
+  background: $ga-green
+  p
+    font-size: 120%
+
+.left-paragraph
+  text-align: left
+  padding-left: 40px
+
+.right-paragraph
+  text-align: left
+
+.contact-section
+  h3
+    color: $ga-darkgreen
+
+/******Services******/
+.service-details
+  margin: 10px 0 0 0
+.service
+  text-align: justify
+  height: 200px
+  p
+    font-size: 120%
+    color: $ga-darkgreen
+  h2
+    margin-bottom: 18px
+
+.service-image img
+  height: 200px
+  border-radius: 10px
+
+.service-button
+  width: 130px
+  margin: 5px 5px
+  background-color: $ga-green
+  border-color: $ga-green
+  color: #fff
+  &:hover, &:active, &:focus
+    background-color: $highlight !important
+    border-color: $ga-green !important
+    color: #fff
+
+.testimonial
+  margin: 0 10px 0 0
+
+.ga-footer
+  color: white
+  width: 100%
+  height: 50px
+  padding: 15px 0 0 0
+  background: #313131
+
+//Image gallerys
+.ga-service-img
+  max-height: 100px
+  &:hover
+    cursor: pointer
+  &.green-thumb
+    background-color: $ga-green
+    border-color: $ga-darkgreen
+
+.ga-image-row
+  margin-top: 10px
+
+.ga-index-gallery-img
+  max-height: 200px
+  &:hover
+    cursor: pointer
+
+//Modal
+
+body.modal-open-noscroll
+  margin-right: 0!important
+  overflow: hidden
+
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom
+  margin-right: 0!important
+
+.modal
+  overflow-y: auto
+
+.modal-body
+  text-align: center
+
+.modal-image
+  border-radius: 10px
+
+.modal-description
+  color: $ga-darkgreen
+  margin-top: 10px
+
